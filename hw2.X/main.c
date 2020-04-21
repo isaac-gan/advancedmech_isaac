@@ -81,20 +81,21 @@ int main() {
         for (d=0;i<NUMSAMPS;d++)
             {
         unsigned short v_triangle = trianglewave[d]; 
+        c=1;
         p_t = c<<15;
         p_t = p_t | 0b111<<12;
         p_t = p_t | v_triangle;
         //return p;
         unsigned short v_sine = sinewave[d];
         c=0;
-        p = c<<15;
-        p = p | 0b111<<12;
-        p = p | v_sine;
+        p_s = c<<15;
+        p_s = p_s | 0b111<<12;
+        p_s = p_s | v_sine;
         
         LATAbits.LATA0 = 0; //bring CS low
         //i = construct_voltage();
-        spi_io(p>>8); //perform 2 x 8-bit writes. 1st 8 bit number contains a
-        spi_io(p);
+        spi_io(p_s>>8); //perform 2 x 8-bit writes. 1st 8 bit number contains a
+        spi_io(p_s);
         spi_io(p_t>>8); //perform 2 x 8-bit writes. 1st 8 bit number contains a
         spi_io(p_t);
         LATAbits.LATA0=1; //bring CS high
