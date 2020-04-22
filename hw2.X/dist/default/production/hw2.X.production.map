@@ -5,105 +5,105 @@ Optional file libmchp_peripheral_32MX170F256B.a not found
 Archive member included because of file (symbol)
 
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o (_bootstrap_exception_handler)
+                              C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o (_bootstrap_exception_handler)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o (_on_reset)
+                              C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o (_on_reset)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o (_on_bootstrap)
+                              C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o (_on_bootstrap)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o (_nmi_handler)
+                              C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o (_nmi_handler)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o (__pic32_data_init)
+                              C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o (__pic32_data_init)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o (_general_exception_context)
+                              C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o (_general_exception_context)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector0.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_0)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_0)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector1.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_1)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_1)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector2.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_2)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_2)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector3.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_3)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_3)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector4.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_4)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_4)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector5.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_5)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_5)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector6.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_6)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_6)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector7.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_7)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_7)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector8.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_8)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_8)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector9.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_9)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_9)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector10.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_10)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_10)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector11.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_11)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_11)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector12.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_12)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_12)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector13.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_13)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_13)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector14.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_14)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_14)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector15.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_15)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_15)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector16.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_16)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_16)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector17.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_17)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_17)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector18.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_18)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_18)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector19.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_19)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_19)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector20.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_20)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_20)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector21.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_21)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_21)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector22.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_22)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_22)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector23.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_23)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_23)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector24.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_24)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_24)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector25.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_25)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_25)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector26.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_26)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_26)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector27.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_27)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_27)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector28.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_28)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_28)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector29.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_29)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_29)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector30.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_30)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_30)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector31.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_31)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_31)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector32.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_32)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_32)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector33.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_33)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_33)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector34.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_34)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_34)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector35.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_35)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_35)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector36.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_36)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_36)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector37.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_37)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_37)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector38.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_38)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_38)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector39.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_39)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_39)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector40.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_40)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_40)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector41.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_41)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_41)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector42.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_42)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_42)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(vector43.o)
-                              C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o (__vector_dispatch_43)
+                              C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o (__vector_dispatch_43)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
                               c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o) (_general_exception_handler)
 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
@@ -126,24 +126,24 @@ Microchip PIC32 Memory-Usage Report
 kseg0 Program-Memory Usage
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-.text                   0x9d000000          0x4f4        1268  App's exec code 
-.text.fpsubadd          0x9d0004f4          0x278         632   
-.text.fp32mul           0x9d00076c          0x1bc         444   
-.text.libm              0x9d000928          0x228         552   
-.text.general_exception 0x9d000b50           0xdc         220   
-.text                   0x9d000c2c           0x84         132  App's exec code 
-.text.fptoli            0x9d000cb0           0x80         128   
-.text.main_entry        0x9d000d30           0x54          84   
-.text._bootstrap_except 0x9d000d84           0x48          72   
-.text._general_exceptio 0x9d000dcc           0x48          72   
-.vector_default         0x9d000e14           0x48          72   
-.text                   0x9d000e5c           0x44          68  App's exec code 
-.dinit                  0x9d000ea0           0x40          64   
-.text                   0x9d000ee0           0x18          24  App's exec code 
-.rodata                 0x9d000ef8            0x8           8  Read-only const 
-.text._on_reset         0x9d000f00            0x8           8   
-.text._on_bootstrap     0x9d000f08            0x8           8   
-      Total kseg0_program_mem used  :       0xf10        3856  1.5% of 0x3f000
+.text                   0x9d000000          0x51c        1308  App's exec code 
+.text.fpsubadd          0x9d00051c          0x278         632   
+.text.fp32mul           0x9d000794          0x1bc         444   
+.text.libm              0x9d000950          0x228         552   
+.text.general_exception 0x9d000b78           0xdc         220   
+.text                   0x9d000c54           0x84         132  App's exec code 
+.text.fptoli            0x9d000cd8           0x80         128   
+.text.main_entry        0x9d000d58           0x54          84   
+.text._bootstrap_except 0x9d000dac           0x48          72   
+.text._general_exceptio 0x9d000df4           0x48          72   
+.vector_default         0x9d000e3c           0x48          72   
+.text                   0x9d000e84           0x44          68  App's exec code 
+.dinit                  0x9d000ec8           0x40          64   
+.text                   0x9d000f08           0x18          24  App's exec code 
+.rodata                 0x9d000f20            0x8           8  Read-only const 
+.text._on_reset         0x9d000f28            0x8           8   
+.text._on_bootstrap     0x9d000f30            0x8           8   
+      Total kseg0_program_mem used  :       0xf38        3896  1.5% of 0x3f000
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -207,7 +207,7 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
          Total kseg1_boot_mem used  :       0x188         392  33.6% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x1208        4616  1.8% of 0x40490
+         Total Program Memory used  :      0x1230        4656  1.8% of 0x40490
         --------------------------------------------------------------------------
 
 
@@ -233,10 +233,10 @@ stack                   0xa0003ed0         0xc120       49440  Reserved for stac
 Discarded input sections
 
  .reginfo       0x00000000       0x18 build/default/production/main.o
- .reginfo       0x00000000       0x18 C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
- .reginfo       0x00000000       0x18 C:\Users\isaac\AppData\Local\Temp\ccevV42t.o
- .reginfo       0x00000000       0x18 C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o
- .discard       0x00000000       0xb0 C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o
+ .reginfo       0x00000000       0x18 C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
+ .reginfo       0x00000000       0x18 C:\Users\isaac\AppData\Local\Temp\ccw0T7Fc.o
+ .reginfo       0x00000000       0x18 C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o
+ .discard       0x00000000       0xb0 C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o
  .reginfo       0x00000000       0x18 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
  .reginfo       0x00000000       0x18 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX170F256B\processor.o
  .reginfo       0x00000000       0x18 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
@@ -320,9 +320,9 @@ Linker script and memory map
 LOAD c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
 LOAD build/default/production/main.o
                 0x00000001                __MPLAB_BUILD = 0x1
-LOAD C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
-LOAD C:\Users\isaac\AppData\Local\Temp\ccevV42t.o
-LOAD C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o
+LOAD C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
+LOAD C:\Users\isaac\AppData\Local\Temp\ccw0T7Fc.o
+LOAD C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o
 LOAD c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
                 0x00000400                PROVIDE (_min_stack_size, 0x400)
 START GROUP
@@ -371,16 +371,16 @@ END GROUP
 
 .reset          0xbfc00000      0x178
  *(.reset)
- .reset         0xbfc00000        0x8 C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
+ .reset         0xbfc00000        0x8 C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
                 0xbfc00000                _reset
  *(.reset.startup)
  .reset.startup
-                0xbfc00008      0x170 C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
+                0xbfc00008      0x170 C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
                 0xbfc00008                _startup
 
 .bev_excpt      0xbfc00380       0x10
  *(.bev_handler)
- .bev_handler   0xbfc00380       0x10 C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
+ .bev_handler   0xbfc00380       0x10 C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
 
 .dbg_excpt      0xbfc00480        0x0
                 0xbfc00480                . = (. + DEFINED (_DEBUGGER)?0x8:0x0)
@@ -390,7 +390,7 @@ END GROUP
 
 .app_excpt      0x9d03f180       0x10
  *(.gen_handler)
- .gen_handler   0x9d03f180       0x10 C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
+ .gen_handler   0x9d03f180       0x10 C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
 
 .vector_0       0x9d03f200        0x8
  *(.vector_0)
@@ -1010,14 +1010,14 @@ END GROUP
  .debug_abbrev  0x000001c8       0x28 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
  .debug_abbrev  0x000001f0       0x28 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_line     0x00000000      0x4b0
+.debug_line     0x00000000      0x4b3
  *(.debug_line)
- .debug_line    0x00000000      0x197 build/default/production/main.o
- .debug_line    0x00000197       0xa6 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_line    0x0000023d       0x93 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_line    0x000002d0       0x97 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x00000367       0xa4 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
- .debug_line    0x0000040b       0xa5 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x00000000      0x19a build/default/production/main.o
+ .debug_line    0x0000019a       0xa6 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x00000240       0x93 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x000002d3       0x97 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x0000036a       0xa4 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+ .debug_line    0x0000040e       0xa5 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_frame    0x00000000      0x168
  *(.debug_frame)
@@ -1472,22 +1472,22 @@ LOAD data_init
  .data          0x00000000        0x0 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
 
 .bss%z120       0x00000000        0x0
- .bss           0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o
+ .bss           0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o
 
 .data%z121      0x00000000        0x0
- .data          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o
+ .data          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o
 
 .bss%z122       0x00000000        0x0
- .bss           0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccevV42t.o
+ .bss           0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccw0T7Fc.o
 
 .data%z123      0x00000000        0x0
- .data          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccevV42t.o
+ .data          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccw0T7Fc.o
 
 .bss%z124       0x00000000        0x0
- .bss           0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
+ .bss           0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
 
 .data%z125      0x00000000        0x0
- .data          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
+ .data          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
 
 .data%z126      0x00000000        0x0
  .data          0x00000000        0x0 build/default/production/main.o
@@ -1504,99 +1504,99 @@ LOAD data_init
                 0xbfc00480       0x2c c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o
                 0xbfc00480                __DbgExecReturn
 
-.text           0x9d000000      0x4f4
- .text          0x9d000000      0x4f4 build/default/production/main.o
+.text           0x9d000000      0x51c
+ .text          0x9d000000      0x51c build/default/production/main.o
                 0x9d000000                main
-                0x9d000228                initSPI
-                0x9d000304                spi_io
-                0x9d00035c                makesinewave
-                0x9d000438                maketrianglewave
+                0x9d00024c                initSPI
+                0x9d000328                spi_io
+                0x9d000380                makesinewave
+                0x9d00045c                maketrianglewave
 
-.text.fpsubadd  0x9d0004f4      0x278
+.text.fpsubadd  0x9d00051c      0x278
  .text.fpsubadd
-                0x9d0004f4      0x278 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fp32subadd.o)
-                0x9d0004f4                fpsub
-                0x9d0004f4                __subsf3
-                0x9d0004fc                __addsf3
-                0x9d0004fc                fpadd
+                0x9d00051c      0x278 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fp32subadd.o)
+                0x9d00051c                fpsub
+                0x9d00051c                __subsf3
+                0x9d000524                __addsf3
+                0x9d000524                fpadd
 
-.text.fp32mul   0x9d00076c      0x1bc
- .text.fp32mul  0x9d00076c      0x1bc c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fp32mul.o)
-                0x9d00076c                fpmul
-                0x9d00076c                __mulsf3
+.text.fp32mul   0x9d000794      0x1bc
+ .text.fp32mul  0x9d000794      0x1bc c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fp32mul.o)
+                0x9d000794                fpmul
+                0x9d000794                __mulsf3
 
-.text.libm      0x9d000928      0x228
- .text.libm     0x9d000928      0x11c c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpsin32.o)
-                0x9d000928                sinf
-                0x9d000928                fpsin
- .text.libm     0x9d000a44      0x10c c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpreduct32.o)
-                0x9d000a44                fpreduct
+.text.libm      0x9d000950      0x228
+ .text.libm     0x9d000950      0x11c c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpsin32.o)
+                0x9d000950                sinf
+                0x9d000950                fpsin
+ .text.libm     0x9d000a6c      0x10c c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpreduct32.o)
+                0x9d000a6c                fpreduct
 
 .text.general_exception
-                0x9d000b50       0xdc
+                0x9d000b78       0xdc
  .text.general_exception
-                0x9d000b50       0xdc c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                0x9d000b50                _general_exception_context
+                0x9d000b78       0xdc c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                0x9d000b78                _general_exception_context
 
-.text           0x9d000c2c       0x84
- .text          0x9d000c2c       0x84 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
-                0x9d000c2c                __pic32_data_init
+.text           0x9d000c54       0x84
+ .text          0x9d000c54       0x84 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
+                0x9d000c54                __pic32_data_init
 
-.text.fptoli    0x9d000cb0       0x80
- .text.fptoli   0x9d000cb0       0x80 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fptoli.o)
-                0x9d000cb0                fptoli
-                0x9d000cb0                fptosi
-                0x9d000cb0                __fixsfsi
+.text.fptoli    0x9d000cd8       0x80
+ .text.fptoli   0x9d000cd8       0x80 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fptoli.o)
+                0x9d000cd8                fptoli
+                0x9d000cd8                fptosi
+                0x9d000cd8                __fixsfsi
 
 .text.main_entry
-                0x9d000d30       0x54
+                0x9d000d58       0x54
  .text.main_entry
-                0x9d000d30       0x54 C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
-                0x9d000d64                __crt0_exit
+                0x9d000d58       0x54 C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
+                0x9d000d8c                __crt0_exit
 
 .text._bootstrap_exception_handler
-                0x9d000d84       0x48
+                0x9d000dac       0x48
  .text._bootstrap_exception_handler
-                0x9d000d84       0x48 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                0x9d000d84                _bootstrap_exception_handler
+                0x9d000dac       0x48 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x9d000dac                _bootstrap_exception_handler
 
 .text._general_exception_handler
-                0x9d000dcc       0x48
+                0x9d000df4       0x48
  .text._general_exception_handler
-                0x9d000dcc       0x48 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
-                0x9d000dcc                _general_exception_handler
+                0x9d000df4       0x48 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+                0x9d000df4                _general_exception_handler
 
 .vector_default
-                0x9d000e14       0x48
+                0x9d000e3c       0x48
  .vector_default
-                0x9d000e14       0x48 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
-                0x9d000e14                _DefaultInterrupt
+                0x9d000e3c       0x48 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                0x9d000e3c                _DefaultInterrupt
 
-.text           0x9d000e5c       0x44
- .text          0x9d000e5c       0x44 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
-                0x9d000e5c                __pic32_software_reset
+.text           0x9d000e84       0x44
+ .text          0x9d000e84       0x44 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\pic32_software_reset.o
+                0x9d000e84                __pic32_software_reset
 
-.dinit          0x9d000ea0       0x40
- .dinit         0x9d000ea0       0x40 data_init
+.dinit          0x9d000ec8       0x40
+ .dinit         0x9d000ec8       0x40 data_init
 
-.text           0x9d000ee0       0x18
- .text          0x9d000ee0       0x18 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                0x9d000ee0                _nmi_handler
+.text           0x9d000f08       0x18
+ .text          0x9d000f08       0x18 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                0x9d000f08                _nmi_handler
 
-.rodata         0x9d000ef8        0x8
- .rodata        0x9d000ef8        0x8 build/default/production/main.o
+.rodata         0x9d000f20        0x8
+ .rodata        0x9d000f20        0x8 build/default/production/main.o
 
 .text._on_reset
-                0x9d000f00        0x8
+                0x9d000f28        0x8
  .text._on_reset
-                0x9d000f00        0x8 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                0x9d000f00                _on_reset
+                0x9d000f28        0x8 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x9d000f28                _on_reset
 
 .text._on_bootstrap
-                0x9d000f08        0x8
+                0x9d000f30        0x8
  .text._on_bootstrap
-                0x9d000f08        0x8 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                0x9d000f08                _on_bootstrap
+                0x9d000f30        0x8 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x9d000f30                _on_bootstrap
 
 .text%z129      0x00000000        0x0
  .text          0x00000000        0x0 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a(fpreduct32.o)
@@ -1770,13 +1770,13 @@ LOAD data_init
  .text          0x00000000        0x0 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MX170F256B\processor.o
 
 .text%z186      0x00000000        0x0
- .text          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccaacYFz.o
+ .text          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccqhN4Ic.o
 
 .text%z187      0x00000000        0x0
- .text          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccevV42t.o
+ .text          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccw0T7Fc.o
 
 .text%z188      0x00000000        0x0
- .text          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccMF9zxJ.o
+ .text          0x00000000        0x0 C:\Users\isaac\AppData\Local\Temp\ccgSA61T.o
 
 .text%z189      0x00000000        0x0
  .text          0x00000000        0x0 c:/users/isaac/projects/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\debug-exception-return.o

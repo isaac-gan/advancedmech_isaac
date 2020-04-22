@@ -78,7 +78,7 @@ int main() {
         unsigned short p_s,p_t; //start constructing message to send to MCP Channel A to see 1.65V 
         unsigned char c=0; //function selects the mode
         int d;
-        for (d=0;i<NUMSAMPS;d++)
+        for (d=0;d<NUMSAMPS;d++)
             {
         unsigned short v_triangle = trianglewave[d]; 
         c=1;
@@ -96,6 +96,8 @@ int main() {
         //i = construct_voltage();
         spi_io(p_s>>8); //perform 2 x 8-bit writes. 1st 8 bit number contains a
         spi_io(p_s);
+        LATAbits.LATA0 = 1;
+        LATAbits.LATA0 = 0;
         spi_io(p_t>>8); //perform 2 x 8-bit writes. 1st 8 bit number contains a
         spi_io(p_t);
         LATAbits.LATA0=1; //bring CS high
@@ -195,7 +197,7 @@ void makesinewave() //sine wave generation: plot y = 2048+2048sinx
     float currentPhase = 0.0;
         for (i=0;i<NUMSAMPS;i++)
         {
-        sinewave[i]= 2048+2048*sin(currentPhase);
+        sinewave[i]= 2047+2047*sin(currentPhase);
         currentPhase += phaseIncrement;
         }
 }
@@ -207,11 +209,11 @@ void maketrianglewave() //triangle wave generation
     { 
       if ( i < NUMSAMPS/2) 
       { 
-        trianglewave[i] = (4096/(NUMSAMPS/2))*i; //increasing part of triangle wave
+        trianglewave[i] = (4095/(NUMSAMPS/2))*i; //increasing part of triangle wave
       }
       else if (i>NUMSAMPS/2)
       { 
-        trianglewave[i] = (-4096/(NUMSAMPS/2))*i+4096; //decreasing part of triangle wave
+        trianglewave[i] = (-4095/(NUMSAMPS/2))*i+4095; //decreasing part of triangle wave
       }
     }
 }
