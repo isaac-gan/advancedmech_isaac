@@ -209,11 +209,11 @@ void maketrianglewave() //triangle wave generation
     { 
       if ( i < NUMSAMPS/2) 
       { 
-        trianglewave[i] = (4095/(NUMSAMPS/2))*i; //increasing part of triangle wave
+        trianglewave[i] = (4096/(NUMSAMPS/2))*i; //increasing part of triangle wave
       }
       else if (i>NUMSAMPS/2)
       { 
-        trianglewave[i] = (-4095/(NUMSAMPS/2))*i+4095; //decreasing part of triangle wave
+        trianglewave[i] = (-4096/(NUMSAMPS/2))*i+4096; //decreasing part of triangle wave
       }
     }
 }
