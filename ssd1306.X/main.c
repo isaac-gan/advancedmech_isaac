@@ -76,7 +76,7 @@ int main() {
         char message[50]; 
         sprintf(message, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP", a); //Part 3 prints correctly 
         drawMessage(0,0,message);
-        heartbeat();
+        //heartbeat();
         checker();
         /*unsigned char i = '&';
         int help=i;*/
@@ -95,7 +95,7 @@ void checker(){
     ssd1306_update();
     float count=_CP0_GET_COUNT();
     char counter[100];
-    sprintf(counter, "FPS=%5.2f", (48000000/count)); //Part 3 prints correctly 
+    sprintf(counter, "FPS=%6.2f", (48000000/count)); //Part 3 prints correctly 
     drawMessage(0,23,counter);
     a++;
     }
