@@ -5,9 +5,9 @@
 #include "ssd1306.h"
 
 //below are 2 addresses for I2C read and write calls.
-unsigned char ssd1306_write = 0b01111000; // i2c address
-unsigned char ssd1306_read = 0b01111001; // i2c address
-unsigned char ssd1306_buffer[512]; // 128x32/8. Every bit is a pixel
+unsigned char ssd1306_write = 0b01111000; // i2c - slave address
+unsigned char ssd1306_read = 0b01111001; // i2c - slave address
+unsigned char ssd1306_buffer[512]; // 128x32/8. Every bit is a pixel on the screen
 //above is giant char array that rep every pixel.
 
 void ssd1306_setup() { //initialisation fxn
@@ -42,12 +42,12 @@ void ssd1306_setup() { //initialisation fxn
     ssd1306_update();
 }
 
-// send a command instruction (not pixel data)
-void ssd1306_command(unsigned char c) {
+// send a command instruction (not pixel data). 
+void ssd1306_command(unsigned char c) { //references fxns in i2c.c
     i2c_master_start();
-    i2c_master_send(ssd1306_write);
+    i2c_master_send(ssd1306_write);//slave address
     i2c_master_send(0x00); // bit 7 is 0 for Co bit (data bytes only), bit 6 is 0 for DC (data is a command))
-    i2c_master_send(c);
+    i2c_master_send(c); // 
     i2c_master_stop();
 }
 
@@ -75,7 +75,7 @@ void ssd1306_update() {
 // set a pixel value. Call update() to push to the display)
 void ssd1306_drawPixel(unsigned char x, unsigned char y, unsigned char color) {
     if ((x < 0) || (x >= 128) || (y < 0) || (y >= 32)) {
-        return;
+        return; //check if the point we are requesting is out of bounds of screen
     }
 
     if (color == 1) {

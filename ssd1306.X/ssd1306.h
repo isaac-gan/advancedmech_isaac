@@ -39,5 +39,8 @@ void ssd1306_command(unsigned char c);
 
 #endif
 
-//1. call draw pixel, sets a bit inside PIC
+//1. call draw pixel, sets a bit inside PIC, not actually showing what screen should display
 //2. update - sends all the bits to update screen
+
+//1. clear 
+//2. update to show that we deleted pixels
