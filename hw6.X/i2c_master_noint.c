@@ -3,53 +3,10 @@
 // I2C pins need pull-up resistors, 2k-10k
 #include "i2c_master_noint.h"
 
-/*void init_ssd1306_i2c(){//Initialisation of SSD1306 by sending configuration of SFRs
-     i2c_master_setup();
-     
-     //Setting of IODIRA to 0x00
-     i2c_master_start();
-     i2c_master_send(0b01000000);//Writing
-     i2c_master_send(0x00);//address of IODIRA
-     i2c_master_send(0x00);//set content of IODIRA to 0x00 so that all A pins o/p
-     i2c_master_stop();
-     
-     //Setting of IODIRB to 0XFF so it is i/p
-     i2c_master_start();
-     i2c_master_send(0b01000000);//Writing
-     i2c_master_send(0x01);//address of IODIRB
-     i2c_master_send(0xFF);//set content of IODIRB
-     i2c_master_stop();
- }*/
-
-void heartbeat(){ //blink LED as a form of debugging, reusing circuit from HW1
-    // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to set heartbeat frequency
-        // remember the core timer runs at half the sysclk
-        /*in the infinite loop, if the value of SCK goes low, 
-         * turn on A4 for 0.5s, off for 0.5s, on for 0.5s, 
-         * and off for 0.5s (so two one-second square wave blinks).*/        
-        _CP0_SET_COUNT(0);
-         while (_CP0_GET_COUNT()< 12000000){
-             LATAbits.LATA4 = 1;
-         }
-         _CP0_SET_COUNT(0);
-         while (_CP0_GET_COUNT()< 12000000){
-             LATAbits.LATA4 = 0;
-         }
-         _CP0_SET_COUNT(0);
-         while (_CP0_GET_COUNT()< 12000000){
-             LATAbits.LATA4 = 1;
-         }
-         _CP0_SET_COUNT(0);
-         while (_CP0_GET_COUNT()< 12000000){
-             LATAbits.LATA4 = 0;
-         }
-                     
-}
-
 void i2c_master_setup(void) {
     // using a large BRG to see it on the nScope, make it smaller after verifying that code works
     // look up TPGD in the datasheet. BRG = Baud Rate Generator
-    I2C1BRG = 0x37; // I2CBRG = [1/(2*Fsck) - TPGD]*Pblck - 2 (TPGD is the Pulse Gobbler Delay). Typical  baud rate is 100khz, 400khz and 1MHz, Usually set to 400khz.
+    I2C1BRG = 16; // I2CBRG = [1/(2*Fsck) - TPGD]*Pblck - 2 (TPGD is the Pulse Gobbler Delay). Typical  baud rate is 100khz, 400khz and 1MHz, Usually set to 400khz.
     I2C1CONbits.ON = 1; // turn on the I2C1 module
 }
 

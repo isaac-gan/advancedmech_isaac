@@ -21,35 +21,9 @@
      i2c_master_stop();
  }*/
 
-void heartbeat(){ //blink LED as a form of debugging, reusing circuit from HW1
-    // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to set heartbeat frequency
-        // remember the core timer runs at half the sysclk
-        /*in the infinite loop, if the value of SCK goes low, 
-         * turn on A4 for 0.5s, off for 0.5s, on for 0.5s, 
-         * and off for 0.5s (so two one-second square wave blinks).*/        
-        _CP0_SET_COUNT(0);
-         while (_CP0_GET_COUNT()< 12000000){
-             LATAbits.LATA4 = 1;
-         }
-         _CP0_SET_COUNT(0);
-         while (_CP0_GET_COUNT()< 12000000){
-             LATAbits.LATA4 = 0;
-         }
-         _CP0_SET_COUNT(0);
-         while (_CP0_GET_COUNT()< 12000000){
-             LATAbits.LATA4 = 1;
-         }
-         _CP0_SET_COUNT(0);
-         while (_CP0_GET_COUNT()< 12000000){
-             LATAbits.LATA4 = 0;
-         }
-                     
-}
-
 void i2c_master_setup(void) {
-    // using a large BRG to see it on the nScope, make it smaller after verifying that code works
     // look up TPGD in the datasheet. BRG = Baud Rate Generator
-    I2C1BRG = 0x37; // I2CBRG = [1/(2*Fsck) - TPGD]*Pblck - 2 (TPGD is the Pulse Gobbler Delay). Typical  baud rate is 100khz, 400khz and 1MHz, Usually set to 400khz.
+    I2C1BRG = 32; // I2CBRG = [1/(2*Fsck) - TPGD]*Pblck - 2 (TPGD is the Pulse Gobbler Delay). Typical  baud rate is 100khz, 400khz and 1MHz, Usually set to 400khz.
     I2C1CONbits.ON = 1; // turn on the I2C1 module
 }
 
@@ -74,7 +48,7 @@ void i2c_master_send(unsigned char byte) { // send a byte to slave
     } // wait for the transmission to finish
     if (I2C1STATbits.ACKSTAT) { // if this is high, slave has not acknowledged
         // ("I2C1 Master: failed to receive ACK\r\n");
-        while(1){heartbeat();  
+        while(1){  
                 } // get stuck here if the chip does not ACK back. If chip does not ack that it received what was sent, PIC just hangs. Good indicator that comm needs to be power reset if PIC freezes. If notice LED is not blinking means got stuck in while loops and need to do power reset. 
     } //in code blinking LED as heartbeat, and if LED stops blinking means need to power reset
 }
