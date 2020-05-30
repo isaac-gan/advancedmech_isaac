@@ -2,7 +2,7 @@
 #include<sys/attribs.h>  // __ISR macro
 #include<stdio.h>
 #include"font.h"
-#include"ws2812b.h"
+#include"rtcc.h"
 
 // DEVCFG0
 #pragma config DEBUG = OFF // disable debugging
@@ -14,7 +14,7 @@
 
 // DEVCFG1
 #pragma config FNOSC = PRIPLL // use primary oscillator with pll
-#pragma config FSOSCEN = OFF // disable secondary oscillator
+#pragma config FSOSCEN = ON // disable secondary oscillator
 #pragma config IESO = OFF // disable switching clocks
 #pragma config POSCMOD = HS // high speed crystal mode
 #pragma config OSCIOFNC = OFF // disable clock output
@@ -35,7 +35,6 @@
 #pragma config PMDL1WAY = OFF // allow multiple reconfigurations
 #pragma config IOL1WAY = OFF // allow multiple reconfigurations
 
-//Baseline Functions for using I2C and printing to SSD1306
 //void heartbeat(void);
 void ssd1306_setup(void);
 //void setPin(unsigned char address, unsigned char register_1, unsigned char value);
@@ -43,19 +42,13 @@ void ssd1306_setup(void);
 void ssd1306_drawPixel(unsigned char x, unsigned char y, unsigned char color);
 void ssd1306_update(void);
 void drawChar(unsigned char x,unsigned char y,int letterinhex);
-void drawMessage(unsigned char x,unsigned char y,unsigned char *message);
-void checker(void);
+void drawMessage(unsigned char x,unsigned char y,char *message);
+//void checker(void);
 
-/*WS2812B Setup
-void ws2812b_setup(void);
-void ws2812b_setColor(wsColor * c, int numLEDs);
-wsColor HSBtoRGB(float hue, float sat, float brightness);*/
-
-//CTMU Function Prototypes
-void adc_setup(void);
-void ctmu_setup(void);
-unsigned int adc_sample_convert(int pin);
-int ctmu_read(int pin, int delay);
+//RTCC Functions
+void rtcc_setup(unsigned long time, unsigned long date);
+void dayOfTheWeek(unsigned char position, char* day);
+rtccTime readRTCC();
 
 int main() {
 
@@ -72,102 +65,46 @@ int main() {
 
     // disable JTAG to get pins back
     DDPCONbits.JTAGEN = 0;
-    
-    //Set ANSEL bit for AN5 - B3 & AN4 - B2
-    ANSELBbits.ANSB3=1;
-    ANSELBbits.ANSB2=1;
-    
+
     // do your TRIS and LAT commands here
-    TRISAbits.TRISA4=0;
-    TRISBbits.TRISB4=1;//controls whether pin is i/p or o/p
+    TRISBbits.TRISB10=0;//button
+    TRISBbits.TRISB11=1;//LED,controls whether pin is i/p or o/p
     
+    //LATAbits.LATA4=0;
     i2c_master_setup();//so ssd1306 can use i2c comm protocol
     ssd1306_setup();
-    adc_setup();
-    ctmu_setup();
-    ws2812b_setup();    
+    
+    //RTCC Setup
+    rtcc_setup(0x13450000,0x20053006); //Based on format - 1.30pm 00 seconds, 2020 May 30 Saturday
     
     __builtin_enable_interrupts();
+   
     
-    wsColor c[3];
-    int numLEDs=3;
-    
+    int a=0;
     while (1) 
-    {        
-        //Control 3 LEDs on WS2812B
-        adc_sample_convert(5);
-        adc_sample_convert(4);
-        int i=0,k=0,j;
-        for(j=0;j<15;j++){
-        i+=ctmu_read(5,2000);//9700 is the threshold, goes down to 7-8k
-        k+=ctmu_read(4,2000);
-        }
-        i=i/15;
-        char message[50];
-        sprintf(message,"%d",i);
-        drawMessage(0,0,message);    
+    {
         
-        /*while(i>6000)
-            {
-            c[0] = HSBtoRGB(0,1,0); 
-            c[1] = HSBtoRGB(120,1,0);
-            c[2] = HSBtoRGB(300,0.2,0);
-            ws2812b_setColor(c,numLEDs);
-            }*/
-
-        k=k/15;
-        sprintf(message,"%d",k);
+        char message[20];
+        char message1[20];
+        sprintf(message, "%d", a); //print integer variable that counts up to show code is working
+        drawMessage(0,0,message);
+        rtccTime time = readRTCC();
+        //Access and format the variable 'time' which stores date and time
+        //Print time
+        sprintf(message, "%d%d:%d%d:%d%d",time.hr10,time.hr01,time.min10,time.min01,time.sec10,time.sec01);
         drawMessage(0,8,message);
         
-        float a,b;
-        int m=k+j;
+        //Print date
+        sprintf(message1, "%d%d:%d%d:%d%d",time.dy10,time.dy01,time.mn10,time.mn01,time.yr10,time.yr01);
+        drawMessage(0,16,message1);
         
-        a=((float)i-6000)/9000;
-        b=((float)k-6000)/9000;
-        float d=((float)m-12000)/13000;
-
-        /*if (m>11000)
-        {
-            d=(float)m/17000;
-
-        }
-        
-        else
-        {
-            d=0;
-        }*/
-                
-        c[0] = HSBtoRGB(0,1,a); //red
-        c[1] = HSBtoRGB(120,1,b);//green
-        c[2] = HSBtoRGB(300,1,d);//purple for both
-        ws2812b_setColor(c,numLEDs);
-        
-        /*while(k>6000)
-            {
-            c[0] = HSBtoRGB(0,1,0); //red
-            c[1] = HSBtoRGB(120,1,0);//green
-            c[2] = HSBtoRGB(300,0.2,0);
-            ws2812b_setColor(c,numLEDs);
-         }*/
-        
-        /*
-        if(m>3000 && m<5000)
-        {
-        c[2] = HSBtoRGB(300,0.2,0);//yellow
-        }
-        else if(m>5000 && m<10000)
-        {
-        c[2] = HSBtoRGB(300,0.2,0.5);//yellow
-        }
-        else if(m>10000)
-        {
-        c[2] = HSBtoRGB(300,0.2,1);//yellow
-        }
-        
-        //wsColor *pointer;//pointer check
-        //pointer=&c;
-        ws2812b_setColor(c,numLEDs);*/
+        //Print day of the week it is using dayOfTheWeek function
+        char day[20];
+        dayOfTheWeek(time.wk,day);
+        sprintf(message,"%s",day);
+        drawMessage(0,24,message);
     
+             a++;
     } 
 
 }
@@ -189,27 +126,29 @@ int main() {
 }*/
 
 //Function to print char array generated by sprintf @ a position
-void drawMessage(unsigned char x,unsigned char y,unsigned char *message)//pointer store the address of message
+void drawMessage(unsigned char x,unsigned char y,char *message)//pointer store the address of message
 {
-     int d = 0;
+     int s = 0;
  
- while (message[d] != 0) {
-     if (d <= 25) {
-     drawChar((d*5) + x, 0 + y, message[d]);
+ while (message[s] != 0) {
+     if (s <= 25) {
+     drawChar((s*5) + x, 0 + y, message[s]);
  }
-     else if (d > 25 && d <= 50) {
-     drawChar(((d-25)*5) + x, 8 + y, message[d]);
+     else if (s > 25 && s <= 50) {
+     drawChar(((s-25)*5) + x, 8 + y, message[s]);
  }
-     else if (d > 50 && d <= 75) {
-     drawChar(((d-50)*5) + x, 16 + y, message[d]);
+     else if (s > 50 && s <= 75) {
+     drawChar(((s-50)*5) + x, 16 + y, message[s]);
  }
-     else if (d > 75 && d <= 100) {
-     drawChar(((d-75)*5) + x, 24 + y, message[d]);
+     else if (s > 75 && s <= 100) {
+     drawChar(((s-75)*5) + x, 24 + y, message[s]);
  }
-     d++;
+     s++;
     
                           }
 }
+
+
 
 //Function to draw a letter at a position using font.h
 void drawChar(unsigned char x,unsigned char y,int letterinhex)
@@ -229,22 +168,42 @@ void drawChar(unsigned char x,unsigned char y,int letterinhex)
     }
 }
 
-/*unsigned char I2C_read_multiple(unsigned char address, unsigned char register_1, unsigned char * data, int length)
-{
+/*void setPin(unsigned char address, unsigned char register_1, unsigned char value){
     i2c_master_start();
-     i2c_master_send(address);//Write to this specific slave address
-     i2c_master_send(register_1);//read from GPIOB so specify it's address 0x13. Read all the pins on GPIOB
-     i2c_master_restart();
-     i2c_master_send(0b11010111);//Read from this specific slave at this address
-     int i;
-     for (i=0;i<(length-1);i++)
-     {
-     data[i] = i2c_master_recv();//data that we want transmitted back
-     i2c_master_ack(0);//ok I got the message bruh
-     }
-     data[i+1]=i2c_master_recv();
-     i2c_master_ack(1); //at this point we have unsigned char array read from IMU
-     i2c_master_stop();
-     return data; 
+    i2c_master_send(address);//writing to this specific slave address
+    i2c_master_send(register_1);//address of the register inside MCP peripheral
+    i2c_master_send(value);//set OL7 bit to high
+    i2c_master_stop();
 }*/
+
+/*unsigned char readPin(unsigned char address, unsigned char register_2)
+{
+     i2c_master_start();
+     i2c_master_send(address);//Write to this specific slave address
+     i2c_master_send(register_2);//read from GPIOB so specify it's address 0x13. Read all the pins on GPIOB
+     i2c_master_restart();
+     i2c_master_send(0b01000001);//Read from this specific slave at this address
+     unsigned char data = i2c_master_recv();//data that we want transmitted back
+     i2c_master_ack(1);//ok I got the message bruh
+     i2c_master_stop();
+     return data;//pass this uchar up to main will process in main
+}*/
+
+ /*void init_mcp23017(){//Initialisation of MCP23017 by sending configuration of SFRs
+     i2c_master_setup();
+     
+     //Setting of IODIRA to 0x00
+     i2c_master_start();
+     i2c_master_send(0b01000000);//Writing
+     i2c_master_send(0x00);//address of IODIRA
+     i2c_master_send(0x00);//set content of IODIRA to 0x00 so that all A pins o/p
+     i2c_master_stop();
+     
+     //Setting of IODIRB to 0XFF so it is i/p
+     i2c_master_start();
+     i2c_master_send(0b01000000);//Writing
+     i2c_master_send(0x01);//address of IODIRB
+     i2c_master_send(0xFF);//set content of IODIRB
+     i2c_master_stop();
+ }*/
     
